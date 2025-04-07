@@ -1,0 +1,230 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  
+  
+  text-align: center;
+  height: 100vh;
+  width: 90vw;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.pupCard{
+  width: calc(50% - 2px);
+  height: 33vh;
+  font-size: small;
+  border: solid black 1px;
+  display: flex;  
+  border-radius: 2rem;
+  background-color: rgb(73, 73, 73);
+  overflow:auto;  
+} 
+
+.pupCardBig{
+  width: 80%;
+  height: 60vh;
+  font-size: 1.5rem;
+  border: solid black 1px;
+  display: flex;  
+  border-radius: 2rem;
+  background-color: rgb(73, 73, 73);
+  margin-left: auto;
+  margin-right: auto;
+  overflow:auto;
+}
+
+.pupCard div, .pupCardBig div {  
+  color: black;
+  z-index: 1;
+  text-align: justify;  
+  max-width: 50%;
+  width: 50%;
+  max-height: 100%;
+  color: white;
+}
+.pupCard img, .pupCardBig img{  
+  max-width: 95%;  
+  max-height: 95%;  
+  aspect-ratio: auto;
+  
+  border-radius: 1rem;
+  position: relative;
+  align-self: center; 
+}
+/* .pupCardBig img{
+  max-width: 48%;
+  width: 48%;
+  max-height: 95%;  
+  
+  border-radius: 1rem;
+  position: relative;
+  align-self: center; 
+} */
+
+.pupCardImageHolder{
+  height: 100%;
+  max-height: 100%;
+  width: 50%;
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.pupCardImageHolderBig{
+  height: 100%;
+  max-height: 100%;
+  width: 50%;
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.pupViewer{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;  
+  width: 100%;
+  min-width: 100%;  
+}
+.textHolder{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+   
+}
+.textHolderBig{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+
+}
+.textHolder div{
+  margin: 0px;
+}
+
+.upperNav{
+  display: flex;
+  flex-direction: row;  
+  margin-bottom: 1rem;  
+  font-size: 1rem;
+  justify-content: right;
+  color: white;
+  background-color: rgb(73, 73, 73);
+  min-height: 4rem;
+  align-items: center;
+  border-radius: 1rem;
+  
+}
+.upperNav a {
+  margin-right: 2rem;
+}
+.welcome{
+  display: flex;
+  justify-content: space-between; 
+  width: 100%;
+}
+
+a:link {
+  color: white;
+}
+
+
+a:visited {
+  color: white;
+}
+
+.textHolderButtons {
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+  
+ 
+}
+.textHolderButtons button{
+  width: 40%;
+  padding: 0px;
+
+}
+
+input[type=text], input[type=url],input[type=number]{  
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+input[type=submit]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+
+label{
+  text-align: start;
+  width: 100%;
+  display: block;
+}
+
+.searchDiv{
+  display: Flex;
+  width: 100%;
+  height: 4rem;
+  margin-bottom: 2rem;
+}
+.searchDiv input{
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+  flex: 60%;
+  padding: .25rem;
+  font-size: 2rem;
+  
+}
+.searchDiv label{
+  height: 100%;
+  flex: 40%;
+  font-size: 2rem;
+}
