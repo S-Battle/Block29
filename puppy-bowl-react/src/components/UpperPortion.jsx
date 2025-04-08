@@ -1,7 +1,6 @@
 import React from  "react";
 import {Route, Routes, Link } from 'react-router';
 import StartPage from "../pages/StartPage";
-import Focus from "../pages/Focus";
 import AddPup from "../pages/AddPup";
 
 

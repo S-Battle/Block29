@@ -3,7 +3,6 @@ import './App.css';
 import UpperPortion from './components/UpperPortion';
 import LowerPortion from './components/LowerPortion';
 import StartPage from './pages/StartPage';
-import Focus from './pages/Focus';
 import AddPup from './pages/AddPup';
 
 function App() {
@@ -26,7 +25,7 @@ function App() {
       <Routes>
                 <Route path="/" element={<StartPage />}></Route>
                 <Route path="/addpup" element={<AddPup />}></Route>
-                <Route path="/focus" element={<Focus />}></Route>                
+                            
             </Routes>
           </>
     
